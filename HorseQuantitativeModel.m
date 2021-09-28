@@ -1530,16 +1530,3 @@ for y = 1:NumRaces
 end
 
 AvgCoefTableClass(:,3) = num2cell(NumHorsesPerRaceTable(:,2)); %puts in the race population, another potential patttern
-
-
-
-
-
-
-
-%running the results automatically
-stringRun = 'ResultsAccuracy';
-ShortenFILEID1 = char(FileID);
-ShortenFILEID2 = ShortenFILEID1(1:7);
-RunString = [stringRun ShortenFILEID2 '.m']
-run(RunString)
